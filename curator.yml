@@ -1,0 +1,15 @@
+---
+# Remember, leave a key empty if there is no value.  None will be a string,
+# not a Python "NoneType"
+client:
+  hosts:
+    - ${ES_HOST:http://localhost}
+  port: ${ES_PORT:9200}
+  aws_region: ${AWS_REGION:eu-central-1}
+  aws_sign_request: True
+
+logging:
+  loglevel: INFO
+  logfile:
+  logformat: default
+  blacklist: ['elasticsearch', 'urllib3']

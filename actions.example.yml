@@ -1,0 +1,6 @@
+actions:
+  1:
+    action: create_index
+    options:
+      name: curator-test
+      disable_action: True
